@@ -1,4 +1,14 @@
+
+.. and did you search cpan for FOO ?
+
+
+========================
 Let Me CPAN That For You
 ========================
 
-A clone of Let Me Google That For You (http://lmgtfy.com).
+A toy app made with Web::Simple.
+Check it working at http://lmctfy.org. 
+
+Inspired on http://lmgtfy.com. In their own words: "This is for all those
+people that find it more convenient to bother you with their question rather
+than google it for themselves.".
