@@ -69,6 +69,20 @@ input { margin: 2px; }
   word-spacing: 3pt
 }
 
+.menubar A {
+  padding: 0.8ex;
+  font: bold 10pt Arial,Helvetica,sans-serif;
+}
+
+.menubar A:link, .menubar A:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.menubar A:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
 
 A:link, A:visited {
   background: transparent;

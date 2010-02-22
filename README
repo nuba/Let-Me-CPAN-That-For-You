@@ -1,4 +1,5 @@
 
+
 .. and did you search cpan for FOO ?
 
 
@@ -6,8 +7,15 @@
 Let Me CPAN That For You
 ========================
 
-A toy app made with Web::Simple and HTML::Zoom.
-Check the progress at http://lmctfy.org. 
+A toy app made in a weekend with Web::Simple and HTML::Zoom.
+
+Examples: 
+  http://lmctfy.org/catalyst
+  http://lmctfy.org/MooseX::*/m
+  http://lmctfy.org/petdance/a
+  http://lmctfy.org/bioperl/d
+
+Go try it at http://lmctfy.org!
 
 Inspired on http://lmgtfy.com. In their own words: "This is for all those
 people that find it more convenient to bother you with their question rather

@@ -15,7 +15,7 @@ dispatch {
   sub (GET + /) {
     my $file = '../templates/start.html';
     return oops unless -f $file;
-    [ 200, [ 'Content-type', 'text/html' ], [ ${ \do { local (@ARGV, $/) = $file; <> } } ] ]
+    [ 200, [ 'Content-type', 'text/html' ], [ do { local (@ARGV, $/) = $file; <> }  ] ]
   },
 
   sub (GET + /*|/*/|/*/*|/*/*/ ) {
@@ -36,7 +36,7 @@ dispatch {
 
     my $file = '../templates/lmctfy.html';
     return oops unless -f $file;
-    my $template = ${ \do { local (@ARGV, $/) = $file; <> } };
+    my $template = do { local (@ARGV, $/) = $file; <> };
 
     [ 200, [ 'Content-type', 'text/html' ], 
       [ 

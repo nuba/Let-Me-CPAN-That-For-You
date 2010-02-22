@@ -18,7 +18,7 @@ function mode_step() {
   cursor.animate({
     left: mode_field.position().left + mode_field.width() - 2, 
     top:  mode_field.position().top + mode_field.height() - 7 , 
-    }, 1500, "easeOutBack", 
+    }, 1500, "easeInOutQuart", 
       function() { 
         mode_field.focus();
         setTimeout(function() {
@@ -55,20 +55,11 @@ function type(field, string, index) {
 }
 
 $(document).ready(function(){
-// extract params from URL /foo/bar/ and inject here with HTML::Zoom - yeah, overkill but this being a toy app I declare that shall be done.
-// bring cursor from NW area to search field
   cursor = $('#cursor');
   query_field = $('#query');
   mode_field = $('#mode');
   submit_button = $('#submit');
 
   start();
-  // type foo in (append, with random timeout)
-//  type(form_query, query, 0);
-
-  // if i have bar, select bar on drop down list
-  // bring cursor over search
-  // say "not hard, isn't it?"
-  // send user to search.cpan.org with the proper query encoded in the URL
 
 });
