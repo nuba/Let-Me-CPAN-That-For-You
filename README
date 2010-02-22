@@ -6,7 +6,7 @@
 Let Me CPAN That For You
 ========================
 
-A toy app made with Web::Simple.
+A toy app made with Web::Simple and HTML::Zoom.
 Check the progress at http://lmctfy.org. 
 
 Inspired on http://lmgtfy.com. In their own words: "This is for all those

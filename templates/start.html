@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <link rel="stylesheet" href="/static/style.css?" type="text/css" />
+  <link rel="search" href="http://lmctfy.org/static/opensearch.xml" type="application/opensearchdescription+xml" title="LMCTFY Search" />
+  <title>Let Me CPAN That For You</title>
+ </head>
+ <body id="cpansearch" onload="document.f.query.focus();" class="front">
+
+<center><div class="logo"><h1>Let Me <a href="/"><img src="/static/cpan_banner.png" alt="CPAN"></a> That For You</h1></div></center>
+<div class="menubar"><span class="instructions">Fill</span> &middot; <span class="instructions">The</span> &middot; <span class="instructions">Form</span> &middot; <span class="instructions">And</span> &middot; <span class="instructions">Click</span> &middot; <span class="instructions">The</span> &middot; <span class="instructions">Button...</span></div>
+<form method="get" action="/search" name="f" class="searchbox">
+<input type="text" name="query" id="query" value="" size="35">
+<br>in <select name="mode" id="mode">
+ <option value="all">All</option>
+ <option value="module" >Modules</option>
+
+ <option value="dist" >Distributions</option>
+ <option value="author" >Authors</option>
+</select>&nbsp;<input type="submit" value="CPAN Search" id="submit">
+</form>
+ </body>
+</html>
+
