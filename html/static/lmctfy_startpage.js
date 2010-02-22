@@ -6,11 +6,15 @@ $(document).ready(function(){
     var lmctfy_url = $('#lmctfy_url');
     var tiny_url = $('#tiny_url');
 
+    lmctfy_url.css({opacity : 0});
+    tiny_url.css({opacity : 0});
+
     submit_button.click(function () {
       lmctfy_url.css({opacity : 0});
       lmctfy_url.text('http://lmctfy.org/' + query_field.val() + '/' + mode_field.val());
       lmctfy_url.fadeTo('fast', 1);
       tiny_button.removeAttr("disabled");
+      tiny_url.css({opacity : 0});
     });
 
     tiny_button.click(function () {
