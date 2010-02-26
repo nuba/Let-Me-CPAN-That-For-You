@@ -9,6 +9,20 @@ $(document).ready(function(){
     lmctfy_url.css({opacity : 0});
     tiny_url.css({opacity : 0});
 
+    query_field.keypress(function(event) {
+      if (event.keyCode == '13') {
+         event.preventDefault();
+         submit_button.click();
+       }
+    });
+
+    mode_field.keypress(function(event) {
+      if (event.keyCode == '13') {
+         event.preventDefault();
+         submit_button.click();
+       }
+    });
+
     submit_button.click(function () {
       lmctfy_url.css({opacity : 0});
       lmctfy_url.text('http://lmctfy.org/' + query_field.val() + '/' + mode_field.val());
